@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercearia online - gestao</title>
+    <link rel="stylesheet" href="/mercearia/css/inicial.css">
+</head>
+<body>
+
+<header>
+  <h1>Mercearia Online - Sistema de Gestão</h1>
+</header>
+
+<nav>
+  <a href="#clientes">Clientes</a>
+  <a href="#produtos">Produtos</a>
+  <a href="#estoque">Estoque</a>
+</nav>
+
+<div class="container" id="clientes">
+  <h2>Cadastro de Clientes</h2>
+  <form>
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+
+    <button type="submit">Cadastrar Cliente</button>
+  </form>
+</div>
+
+<div class="container" id="produtos">
+  <h2>Cadastro de Produtos</h2>
+  <form>
+    <label for="produto">Nome do produto:</label>
+    <input type="text" id="produto" name="produto">
+
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" step="0.01">
+
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" name="categoria">
+      <option>Alimentos</option>
+      <option>Bebidas</option>
+      <option>Limpeza</option>
+      <option>Higiene</option>
+    </select>
+
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+</div>
+
+<div class="container" id="estoque">
+  <h2>Controle de Estoque</h2>
+  <form>
+    <label for="produtoEstoque">Produto:</label>
+    <input type="text" id="produtoEstoque" name="produtoEstoque">
+
+    <label for="quantidade">Quantidade em Estoque:</label>
+    <input type="number" id="quantidade" name="quantidade">
+
+    <button type="submit">Atualizar Estoque</button>
+  </form>
+</div>
+    
+</body>
+</html>
